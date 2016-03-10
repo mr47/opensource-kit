@@ -1,0 +1,32 @@
+{
+    "root": true,
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true
+    },
+    "parser": "babel-eslint",
+    "rules": {
+        "strict": [2, "global"],
+        "no-debugger": 2,
+        "no-extra-semi": 2,
+        "no-constant-condition": 2,
+        "no-extra-parens": [2, "functions"],
+        "no-func-assign":  2,
+        "no-obj-calls": 2,
+        "no-unexpected-multiline": 2,
+        "no-unreachable": 2,
+        "use-isnan": 2,
+        "no-extend-native": [2, {"exceptions": ["Object"]}],
+        "no-alert": 2,
+        "no-caller": 1,
+        "no-eval": 2,
+        "no-dupe-keys": 2,
+        "no-empty-pattern": 2,
+        "no-delete-var": 2,
+        "no-undef-init": 2,
+        "no-undef": 2,
+        "no-unused-vars": [2, {"vars": "all", "args": "none", "varsIgnorePattern": "^_|$"}],
+        "comma-dangle" : [2, "never"]
+    }
+}

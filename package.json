@@ -1,0 +1,53 @@
+{
+  "name": "single-line-code-editor",
+  "version": "0.0.1",
+  "description": "Single line editor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:webpack": "webpack --config webpack.config.dist --colors -p",
+    "build:babel": "babel ./src/ --out-dir=lib",
+    "build": "npm run build:babel && npm run build:webpack",
+    "start": "webpack-dev-server --inline --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mr47/nuka-carousel-autoscroll.git"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "autoprefixer": "^6.3.1",
+    "babel-cli": "^6.5.1",
+    "babel-core": "^6.5.1",
+    "babel-loader": "^6.2.2",
+    "babel-plugin-react-transform": "^2.0.0",
+    "babel-polyfill": "^6.5.0",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-runtime": "^6.5.0",
+    "browser-sync": "^2.11.1",
+    "browser-sync-webpack-plugin": "^1.0.1",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "node-sass": "^3.4.2",
+    "nuka-carousel": "^1.0.2",
+    "postcss-loader": "^0.8.0",
+    "progress-bar-webpack-plugin": "^1.3.0",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "author": "mr47",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mr47/nuka-carousel-autoscroll/issues"
+  },
+  "homepage": "https://github.com/mr47/nuka-carousel-autoscroll#readme",
+  "dependencies": {
+    "bluebird": "^3.3.4",
+    "html-webpack-plugin": "^2.10.0",
+    "jquery": "^2.2.1",
+    "lodash": "^4.6.1"
+  }
+}
