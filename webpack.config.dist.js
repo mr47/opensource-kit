@@ -13,7 +13,7 @@ var cssLoaders = [
 
 module.exports = {
     entry: {
-        dotcode: ["./src/dotcode"]
+        dotcode: ["./src/main"]
     },
     output: {
         path: path.join(__dirname, "dist"),
@@ -33,14 +33,14 @@ module.exports = {
             "_": "lodash",
             Promise: "bluebird"
         }),
-        new ExtractTextPlugin("autoscroll.css", {
+        new ExtractTextPlugin("dotcode.css", {
             allChunks: true
         }),
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false
-            }
-        }),
+        //new webpack.optimize.UglifyJsPlugin({
+        //    compress: {
+        //        warnings: false
+        //    }
+        //}),
         new webpack.NoErrorsPlugin()
     ],
     resolve: {
