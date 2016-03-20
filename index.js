@@ -1,5 +1,5 @@
 'use strict';
 
-var Lib = require('./lib/dotcode');
+var Lib = require('./lib/index');
 
 module.exports = Lib;

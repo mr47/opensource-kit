@@ -13,7 +13,7 @@ var cssLoaders = [
 
 module.exports = {
     entry: {
-        dotcode: ["./src/main"]
+        index: ["./src/index"]
     },
     output: {
         path: path.join(__dirname, "dist"),
@@ -33,14 +33,15 @@ module.exports = {
             "_": "lodash",
             Promise: "bluebird"
         }),
-        new ExtractTextPlugin("dotcode.css", {
+        new ExtractTextPlugin("styles.css", {
             allChunks: true
         }),
-        //new webpack.optimize.UglifyJsPlugin({
-        //    compress: {
-        //        warnings: false
-        //    }
-        //}),
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false,
+                drop_console: true
+            }
+        }),
         new webpack.NoErrorsPlugin()
     ],
     resolve: {
@@ -63,13 +64,13 @@ module.exports = {
     externals: [
         {
             "lodash": {
-                root: "lodash",
+                root: "_",
                 commonjs2: "lodash",
                 commonjs: "lodash",
                 amd: "lodash"
             },
             "jquery": {
-                root: "jquery",
+                root: "jQuery",
                 commonjs2: "jquery",
                 commonjs: "jquery",
                 amd: "jquery"

@@ -1,10 +1,10 @@
 {
-  "name": "single-line-code-editor",
-  "version": "0.0.1",
-  "description": "Single line editor",
+  "name": "opensource-kit",
+  "version": "0.1.1",
+  "description": "Open source kit for people who writes a good libs.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "karma start --single-run --browsers PhantomJS",
     "build:webpack": "webpack --config webpack.config.dist --colors -p",
     "build:babel": "babel ./src/ --out-dir=lib",
     "build": "npm run build:babel && npm run build:webpack",
@@ -14,7 +14,14 @@
     "type": "git",
     "url": "git+https://github.com/mr47/nuka-carousel-autoscroll.git"
   },
-  "keywords": [],
+  "keywords": [
+    "opensource",
+    "kit",
+    "lib"
+  ],
+  "engines": {
+    "node": ">=5.0.0"
+  },
   "devDependencies": {
     "autoprefixer": "^6.3.1",
     "babel-cli": "^6.5.1",
@@ -27,10 +34,26 @@
     "babel-runtime": "^6.5.0",
     "browser-sync": "^2.11.1",
     "browser-sync-webpack-plugin": "^1.0.1",
+    "chai": "^3.5.0",
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
+    "html-webpack-plugin": "^2.10.0",
+    "isparta": "^4.0.0",
+    "isparta-loader": "^2.0.0",
+    "istanbul-instrumenter-loader": "^0.2.0",
+    "karma": "^0.13.22",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-coverage": "^0.5.5",
+    "karma-mocha": "^0.2.2",
+    "karma-mocha-reporter": "^2.0.0",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-spec-reporter": "0.0.24",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^2.4.5",
     "node-sass": "^3.4.2",
-    "nuka-carousel": "^1.0.2",
+    "phantomjs-polyfill": "0.0.2",
+    "phantomjs-prebuilt": "^2.1.6",
     "postcss-loader": "^0.8.0",
     "progress-bar-webpack-plugin": "^1.3.0",
     "sass-loader": "^3.1.2",
@@ -46,7 +69,6 @@
   "homepage": "https://github.com/mr47/nuka-carousel-autoscroll#readme",
   "dependencies": {
     "bluebird": "^3.3.4",
-    "html-webpack-plugin": "^2.10.0",
     "jquery": "^2.2.1",
     "lodash": "^4.6.1"
   }

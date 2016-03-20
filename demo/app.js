@@ -1,5 +1,5 @@
 'use strict';
 
-import '../src/main';
+import '../src';
 
 console.log(123132132);
