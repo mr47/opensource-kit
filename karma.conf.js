@@ -1,4 +1,3 @@
-'use strict';
 var webpack = require("webpack");
 var webpackKarmaConfig = require('./webpack.karma');
 var isparta = require('isparta');
@@ -10,7 +9,6 @@ module.exports = function(config) {
 
         // base path that will be used to resolve all patterns (eg. files, exclude)
         basePath: '',
-
 
         // frameworks to use
         // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
@@ -34,9 +32,16 @@ module.exports = function(config) {
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
         preprocessors: {
-            'test/*.js': ['webpack']
+            'test/*.js': ['webpack'],
+            '**/*.js': ['eslint']
         },
 
+        //ESLint
+        eslint: {
+            stopOnError: false,
+            stopOnWarning: true,
+            showWarnings: true
+        },
         // webpack
         webpack: webpackKarmaConfig,
         webpackMiddleware: {
@@ -99,7 +104,7 @@ module.exports = function(config) {
         // won't work here
         plugins: [
             require("karma-webpack"),
-            require("istanbul-instrumenter-loader"),
+            require("karma-eslint"),
             require("karma-mocha"),
             require("karma-chai"),
             require("karma-coverage"),
