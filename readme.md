@@ -6,6 +6,8 @@
 </p>
 
 > Open source kit for people who writes nice code.
+
+
 ###Installation
 ```bash
 	git clone https://github.com/mr47/opensource-kit
