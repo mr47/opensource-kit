@@ -5,23 +5,35 @@ import * as styles from './styles.scss';
 
 class Calc{
     register = 0;
-    history = [];
+    innerHistory = [];
     constructor(initValue = 0){
         this.register = initValue;
+        return this;
     }
     add(value = 0){
-        this.history.push(value);
-        return this.register + value;
+        this.innerHistory.push(value);
+        this.register = this.register + value;
+        return this;
     }
     reset(value = 0){
         this.register = value || 0;
+        return this;
     }
     memory(value){
         if (value) {
-            this.reset();
-            this.history = [];
+            this.reset(value);
+            this.innerHistory = [];
+            return this;
         } else {
             return this.register;
+        }
+    }
+    history(value){
+        if (value) {
+            this.innerHistory = [];
+            return this;
+        } else {
+            return this.innerHistory;
         }
     }
 }

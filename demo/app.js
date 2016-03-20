@@ -1,5 +1,8 @@
 'use strict';
 
-import '../src';
+import Calc from '../src';
 
-console.log(123132132);
+let calc = new Calc(0);
+
+console.log(calc.add(2).memory());
+console.log(calc.reset().add(5).memory());
