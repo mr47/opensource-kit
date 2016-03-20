@@ -8,6 +8,7 @@
     "build:webpack": "webpack --config webpack.config.dist --colors -p",
     "build:babel": "babel ./src/ --out-dir=lib",
     "build": "npm run build:babel && npm run build:webpack",
+    "lint": "eslint ./src/**/*.js",
     "start": "webpack-dev-server --inline --hot"
   },
   "repository": {

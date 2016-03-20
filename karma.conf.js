@@ -32,13 +32,13 @@ module.exports = function(config) {
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
         preprocessors: {
-            'test/*.js': ['webpack'],
-            '**/*.js': ['eslint']
+            '/src/**/*.js': ['eslint'],
+            'test/*.js': ['webpack']
         },
 
         //ESLint
         eslint: {
-            stopOnError: false,
+            stopOnError: true,
             stopOnWarning: true,
             showWarnings: true
         },
