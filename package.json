@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mr47/nuka-carousel-autoscroll.git"
+    "url": "git+https://github.com/mr47/opensource-kit.git"
   },
   "keywords": [
     "opensource",
@@ -65,9 +65,9 @@
   "author": "mr47",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mr47/nuka-carousel-autoscroll/issues"
+    "url": "https://github.com/mr47/opensource-kit/issues"
   },
-  "homepage": "https://github.com/mr47/nuka-carousel-autoscroll#readme",
+  "homepage": "https://github.com/mr47/opensource-kit#readme",
   "dependencies": {
     "bluebird": "^3.3.4",
     "jquery": "^2.2.1",
