@@ -57,6 +57,7 @@ Webpack build
 
 ##Motivation
 I writed few big/small/zero projects last months, and tested my env. For many reasons i choose some components one by another so for now its my stack for javascript code.
+Some info i will publish here and in my [blog](https://mr47.in/2016/03/20/opensource-kit/)
 
 ##License
 MIT
