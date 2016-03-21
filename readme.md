@@ -8,7 +8,7 @@
     <img alt="Open source kit" src="https://raw.githubusercontent.com/mr47/opensource-kit/master/tmp/oskit.png" width="546">
 </p>
 
-> Open source kit for people who writes nice code.
+> Open source kit for people who writes a nice code.
 
 
 ###Installation
