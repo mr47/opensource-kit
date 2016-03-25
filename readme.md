@@ -1,5 +1,3 @@
-[![npm](https://img.shields.io/npm/v/npm.svg)]() 
-[![node](https://img.shields.io/badge/node-%3E%3D5.0.0-green.svg)]() 
 [![David](https://img.shields.io/david/mr47/opensource-kit.svg)]()
 [![David](https://img.shields.io/david/dev/mr47/opensource-kit.svg)]()
 [![Travis](https://img.shields.io/travis/mr47/opensource-kit.svg)]()
@@ -13,8 +11,17 @@
 
 > Open source kit for people who writes a nice code.
 
+Create simple, flexible libraries without worry about production ready covered code. Simple and easy to use. 
 
-###Installation
+Do you wanna build you library with few lines of `npm ...` ?.
+
+No need to find `amazing-new-boilerplate-with-black-jack` just use `Open source kit`. 
+
+You create a lib and just run `npm run build` thats all. Its clean minified uglified code with coverage.
+
+[Wanna help?](#CONTRIBUTING)
+
+##Installation
 ```bash
 $ git clone https://github.com/mr47/opensource-kit
 ```
@@ -22,7 +29,7 @@ bad idea but still available :
 ```bash
 $ npm install opensource-kit
 ```
-####Whats inside:
+##Whats inside:
 
  - [Webpack](https://webpack.github.io/) (bundler, with demo external lib)
  - [Babel](https://babeljs.io) ( stage 0, es2015 ) 
@@ -33,21 +40,36 @@ $ npm install opensource-kit
  - Sass (scss)
  - [ESLint](https://github.com/eslint/eslint)
 
-####Additional:
+###Additional:
 
  - [.editorconfig](http://editorconfig.org/)
  - [.babelrc](https://babeljs.io/docs/usage/babelrc/)
 
-####Demo:
+###Demo:
 
  - [Webpack Dev Server](https://webpack.github.io/docs/webpack-dev-server.html)
  - [Browser sync](https://www.browsersync.io/)
 
-Basic idea it to create a production ready environment with tests and with single line to build. No need to find and test components, they all works. They all tested.
+##Publishing you package
+To follow [semver](http://semver.org/) use follow commands (before update version in `package.json` it runs `npm run preversion`)
 
-You create a lib and just run `npm run build` thats all.
-Its clean minified uglified code with covarage.
+To make a patch:
+```bash
+$ npm version patch
+```
+To make a minor change:
+```bash
+$ npm version minor
+```
+To make a major change:
+```bash
+$ npm version minor
+```
 
+To publish package to npm:
+```bash
+$ npm publish
+```
 
 ##Build
 Complete build to `./dist/`
@@ -64,6 +86,7 @@ $ npm run build:webpack
 ```
 
 ##Test
+It will run karma with config `karma.conf.js`
 ```bash
 $ npm test
 ```
@@ -79,5 +102,21 @@ I writed few big/small/zero projects last months, and tested my env. For many re
 
 See issues.
 
+##Node and npm version tested
+[![npm](https://img.shields.io/npm/v/npm.svg)]() 
+[![node](https://img.shields.io/badge/node-%3E%3D5.0.0-green.svg)]() 
+
+#CONTRIBUTING
+Pull request are welcome, just fork repo.
+
+## Installation
+
+Install dependencies using `npm install`.
+
+## Building
+
+Build the source code using `npm run build`.
+
 ##License
 MIT
+
