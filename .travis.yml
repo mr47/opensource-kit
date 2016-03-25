@@ -24,5 +24,4 @@ script:
   - npm test
 
 after_script:
-  - ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'
-  - codeclimate-test-reporter < $HOME/dist/covarage/lcov.info
+  - codeclimate-test-reporter < $HOME/build/dist/covarage/**/lcov.info
