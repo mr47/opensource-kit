@@ -1,6 +1,6 @@
 {
   "name": "opensource-kit",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Open source kit for people who writes a good libs.",
   "main": "index.js",
   "scripts": {
