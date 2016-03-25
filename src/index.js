@@ -11,7 +11,7 @@ class Calc{
         return this;
     }
     add(value = 0){
-        this.innerHistory.push(value);
+        this.innerHistory.push([value, this.register]);
         this.register = this.register + value;
         return this;
     }
@@ -30,7 +30,7 @@ class Calc{
     }
     history(value){
         if (value) {
-            this.innerHistory = [];
+            this.innerHistory = [value];
             return this;
         } else {
             return this.innerHistory;

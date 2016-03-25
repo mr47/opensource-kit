@@ -1,6 +1,7 @@
 "use strict";
 
-import chai from 'chai';
+import 'chai';
+
 import Calc from './../../src/index';
 
 describe("Calculator", ()=>{
@@ -39,6 +40,43 @@ describe("Calculator", ()=>{
 
         mem.should.be.a('Number');
         mem.should.equal(0);
+    });
+
+    it("should remember a history with results", ()=>{
+        let calc = new Calc(0);
+        let mem = calc
+            .add(2)
+            .add(3)
+            .memory();
+        let history = calc.history();
+        expect(history).to.deep.equal([[2, 0], [3, 2]]);
+        mem.should.be.a('Number');
+        mem.should.equal(5);
+    });
+
+    it("should setup a history", ()=>{
+        let calc = new Calc(0);
+        let mem = calc
+            .add(2)
+            .add(3)
+            .memory();
+        calc.history([-1,-1]);
+        let history = calc.history();
+        expect(history).to.deep.equal([[-1,-1]]);
+        mem.should.be.a('Number');
+        mem.should.equal(5);
+    });
+
+    it("should remember a history with results", ()=>{
+        let calc = new Calc(0);
+        let mem = calc
+            .add(2)
+            .add(3)
+            .memory();
+        let history = calc.history();
+        expect(history).to.deep.equal([[2, 0], [3, 2]]);
+        mem.should.be.a('Number');
+        mem.should.equal(5);
     });
 
 });
