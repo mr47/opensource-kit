@@ -13,11 +13,11 @@
 
 ###Installation
 ```bash
-	git clone https://github.com/mr47/opensource-kit
+$ git clone https://github.com/mr47/opensource-kit
 ```
 bad idea but still available :
 ```bash
-	npm install opensource-kit
+$ npm install opensource-kit
 ```
 ####Whats inside:
 
@@ -49,11 +49,11 @@ Its clean minified uglified code with covarage.
 ##Build
 Complete build to `./dist/`
 ```bash
-	npm run build
+$ npm run build
 ```
 Babel build `./lib/`
 ```bash
-	npm run build:babel
+$ npm run build:babel
 ```
 Webpack build
 ```bash
@@ -62,11 +62,11 @@ Webpack build
 
 ##Test
 ```bash
-	npm test
+$ npm test
 ```
 ##Run Demo
 ```bash
-	npm run start
+$ npm run start
 ```
 
 ##Motivation
@@ -74,6 +74,7 @@ I writed few big/small/zero projects last months, and tested my env. For many re
 
 ##TODO
 
+See issues.
 
 ##License
 MIT
