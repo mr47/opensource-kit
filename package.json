@@ -10,7 +10,7 @@
     "build": "npm run build:babel && npm run build:webpack",
     "lint": "eslint ./src/**/*.js",
     "start": "webpack-dev-server --inline --hot",
-    "preversion": "npm test && npm build"
+    "preversion": "npm run lint && npm build && npm test"
   },
   "repository": {
     "type": "git",
