@@ -2,6 +2,7 @@
 [![node](https://img.shields.io/badge/node-%3E%3D5.0.0-green.svg)]() 
 [![David](https://img.shields.io/david/mr47/opensource-kit.svg)]()
 [![David](https://img.shields.io/david/dev/mr47/opensource-kit.svg)]()
+[![Travis](https://img.shields.io/travis/mr47/opensource-kit.svg)]()
 [![Twitter Follow](https://img.shields.io/twitter/follow/seekmode.svg?style=social)](https://twitter.com/seekmode)
 
 <p align="center">
@@ -57,7 +58,7 @@ $ npm run build:babel
 ```
 Webpack build
 ```bash
-	npm run build:webpack
+$ npm run build:webpack
 ```
 
 ##Test
