@@ -22,4 +22,4 @@ script:
   - npm test
 
 after_script:
-  - codeclimate-test-reporter < ./dist/covarage/lcov.info
+  - codeclimate-test-reporter < dist/covarage/lcov.info
