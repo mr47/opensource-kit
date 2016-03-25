@@ -3,6 +3,8 @@ language: node_js
 node_js:
   - "5"
 
+sudo: false
+
 addons:
   code_climate:
       repo_token: ed7affb886ea3697ade7b50bc36a3be66af736fc01c4e2526d3fd819c5051630
@@ -22,4 +24,5 @@ script:
   - npm test
 
 after_script:
-  - codeclimate-test-reporter < dist/covarage/lcov.info
+  - ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'
+  - codeclimate-test-reporter < $HOME/dist/covarage/lcov.info
