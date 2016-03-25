@@ -3,6 +3,8 @@
 [![David](https://img.shields.io/david/mr47/opensource-kit.svg)]()
 [![David](https://img.shields.io/david/dev/mr47/opensource-kit.svg)]()
 [![Travis](https://img.shields.io/travis/mr47/opensource-kit.svg)]()
+[![Code Climate](https://codeclimate.com/github/mr47/opensource-kit/badges/gpa.svg)](https://codeclimate.com/github/mr47/opensource-kit)
+[![Test Coverage](https://codeclimate.com/github/mr47/opensource-kit/badges/coverage.svg)](https://codeclimate.com/github/mr47/opensource-kit/coverage)
 [![Twitter Follow](https://img.shields.io/twitter/follow/seekmode.svg?style=social)](https://twitter.com/seekmode)
 
 <p align="center">
