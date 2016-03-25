@@ -9,7 +9,8 @@
     "build:babel": "babel ./src/ --out-dir=lib",
     "build": "npm run build:babel && npm run build:webpack",
     "lint": "eslint ./src/**/*.js",
-    "start": "webpack-dev-server --inline --hot"
+    "start": "webpack-dev-server --inline --hot",
+    "preversion": "npm test && npm build"
   },
   "repository": {
     "type": "git",
