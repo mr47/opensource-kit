@@ -20,6 +20,8 @@ before_install:
   - "export PATH=$PWD/travis-phantomjs/phantomjs-2.1.1-linux-x86_64/bin:$PATH"
   - "phantomjs --version"
 
+before_script:
+  - npm install -g codeclimate-test-reporter
 script:
   - npm test
 
