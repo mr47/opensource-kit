@@ -1,6 +1,12 @@
 language: node_js
+
 node_js:
   - "5"
+
+addons:
+  code_climate:
+      repo_token: ed7affb886ea3697ade7b50bc36a3be66af736fc01c4e2526d3fd819c5051630
+
 cache:
   directories:
     - "travis-phantomjs"
@@ -11,5 +17,9 @@ before_install:
   - "if [ $PHANTOM_EXISTS = 'false' ]; then tar -xvf $PWD/travis-phantomjs/phantomjs-2.1.1-linux-x86_64.tar.bz2 -C $PWD/travis-phantomjs; fi"
   - "export PATH=$PWD/travis-phantomjs/phantomjs-2.1.1-linux-x86_64/bin:$PATH"
   - "phantomjs --version"
+
 script:
   - npm test
+
+after_script:
+  - codeclimate-test-reporter < ./dist/covarage/lcov.info

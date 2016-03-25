@@ -51,8 +51,8 @@ module.exports = function(config) {
 
         // coverage
         coverageReporter: {
-            //default
-            type: 'html',
+            // coverage generated in the Lcov format
+            type: 'lcov',
             dir: 'dist/coverage/',
 
             // configure the reporter to use isparta for JavaScript coverage
