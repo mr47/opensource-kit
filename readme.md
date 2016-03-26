@@ -63,7 +63,7 @@ $ npm version minor
 ```
 To make a major change:
 ```bash
-$ npm version minor
+$ npm version major
 ```
 
 To publish package to npm:
