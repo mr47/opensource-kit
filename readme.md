@@ -19,7 +19,7 @@ No need to find `amazing-new-boilerplate-with-black-jack` just use `Open source 
 
 You create a lib and just run `npm run build` thats all. Its clean minified uglified code with coverage.
 
-[Wanna help?](#CONTRIBUTING)
+[Wanna help?](#contributing)
 
 ##Installation
 ```bash
