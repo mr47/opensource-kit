@@ -13,7 +13,7 @@
 
 Create simple, flexible libraries without worry about production ready covered code. Simple and easy to use. 
 
-Do you wanna build you library with few lines of `npm ...` ?.
+Do you wanna build you library with few lines of `npm` ?.
 
 No need to find `amazing-new-boilerplate-with-black-jack` just use `Open source kit`. 
 
